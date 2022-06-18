@@ -52,5 +52,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'mahasiswa';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['dashboard/update/(:num)'] = 'dashboard/getUserById/$1';
+$route['dashboard/get/(:num)'] = 'dashboard/getUserById/$1';
 $route['dashboard/delete/(:num)'] = 'dashboard/deleteUser/$1';

@@ -15,8 +15,6 @@ class Mahasiswa_model extends CI_Model
 
         return true;
     }
-
-
     public function checkMahasiswa($email, $pass){
         $query = $this->db->get_where("mahasiswa", [
             "email" => $email,
@@ -25,7 +23,6 @@ class Mahasiswa_model extends CI_Model
 
         return $query->row();
     }   
-
     public function getData($email, $nim){
         $query = $this->db->get_where("mahasiswa", [
             "email" => $email,

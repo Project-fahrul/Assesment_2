@@ -62,7 +62,7 @@
 
             let response;            
             try {
-                response = await axios.get("<?php echo $this->config->config['base_url'] ?>"+"dashboard/update/"+userId);
+                response = await axios.get("<?php echo $this->config->config['base_url'] ?>"+"dashboard/get/"+userId);
             } catch (error) {
                 console.log(error);
             }
